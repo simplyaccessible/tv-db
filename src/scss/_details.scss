@@ -1,0 +1,31 @@
+.details__subtitle {
+  &:first-child {
+    @media (min-width: 35rem) {
+      margin-top: 0;
+    }
+  }
+}
+
+.details__table {
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+
+  th,
+  td {
+    border: solid $light-gray 1px;
+    padding: .5rem;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  tr {
+    &:nth-child(odd) {
+      background-color: $off-white;
+    }
+  }
+}
+
+.details__genere-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}

@@ -1,0 +1,44 @@
+.header {
+  // background: $black url('/images/tvs.jpg') 100% 50% no-repeat;
+  // background-size: 75%;
+  margin: -2rem -2rem 0;
+  position: relative;
+
+  @media (min-width: 35rem) {
+    margin: -3rem -3rem 0;
+  }
+
+  &:before {
+    background-image: linear-gradient(to right, $black 25%, transparent 100%);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.header__link {
+  background-color: $red;
+  border-radius: 1rem;
+  color: $white;
+  display: inline-block;
+  font-size: 3rem;
+  line-height: 1;
+  margin: 1.5rem 2rem;
+  padding: 1rem 2rem;
+  position: relative;
+  text-decoration: none;
+  z-index: 2;
+
+  @media (min-width: 35rem) {
+    font-size: 4rem;
+    margin: 2rem 3rem;
+  }
+
+  &:focus,
+  &:hover {
+    color: $white;
+  }
+}

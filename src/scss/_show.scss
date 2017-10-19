@@ -1,0 +1,26 @@
+.show__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.show__list-item {
+  margin: 1rem;
+  padding: 0;
+}
+
+.show__link {
+  display: block;
+  height: 295px;
+  margin: 0;
+  padding: 0;
+  width: 210px;
+}
+
+.show__image {
+  height: auto;
+  max-width: 100%;
+}

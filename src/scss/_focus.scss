@@ -1,0 +1,16 @@
+.app {
+  *:focus {
+    outline: 0;
+  }
+}
+
+.app--has-focus {
+  *:focus {
+    outline: solid $blue 3px;
+  }
+
+  .container,
+  .loader {
+    outline: 0;
+  }
+}

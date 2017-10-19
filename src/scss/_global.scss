@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: $off-white;
+  color: $gray;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $red;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-decoration-line: underline;
+  text-decoration-skip: ink;
+  text-decoration-style: solid;
+  transition: color .2s ease-out;
+
+  &:focus,
+  &:hover {
+    color: $dark-red;
+  }
+}
+
+p {
+  line-height: 1.6;
+}

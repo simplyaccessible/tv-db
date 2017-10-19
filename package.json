@@ -1,0 +1,33 @@
+{
+  "name": "tv-db",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://simplyaccessible.com/tv-db",
+  "dependencies": {
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.13",
+    "webfontloader": "^1.6.28"
+  },
+  "scripts": {
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build && npm run autoprefixer",
+    "start-js": "react-scripts start",
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "autoprefixer": "postcss build/static/css/*.css --use autoprefixer -o build/static/css/*.css",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "eslint": "^4.6.1",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "postcss-cli": "^4.1.1",
+    "react-html-parser": "^2.0.0"
+  }
+}

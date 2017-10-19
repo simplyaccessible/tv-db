@@ -1,0 +1,33 @@
+.container {
+  background-color: $white;
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 2rem;
+
+  @media (min-width: 35rem) {
+    padding: 3rem;
+  }
+}
+
+.main {
+  margin-top: 2rem;
+  min-height: calc(100vh - 19rem);
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: 35rem) {
+    flex-wrap: nowrap;
+
+    .grid__item {
+      margin-right: 1.5rem;
+
+      & + .grid__item {
+        margin-left: 1.5rem;
+        margin-right: 0;
+      }
+    }
+  }
+}

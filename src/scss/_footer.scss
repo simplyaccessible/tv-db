@@ -1,0 +1,11 @@
+.footer {
+  border-top: solid $light-gray 1px;
+  color: $black;
+  font-size: .8rem;
+  margin: 2rem 0 -1rem;
+  padding-top: 1rem;
+
+  @media (min-width: 35rem) {
+    margin: 3rem 0 -1rem;
+  }
+}

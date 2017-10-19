@@ -1,0 +1,6 @@
+rules:
+  class-name-format:
+    - 1
+    - convention: hyphenatedbem
+  no-duplicate-properties: 0
+  no-important: 0

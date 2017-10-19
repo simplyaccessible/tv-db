@@ -1,0 +1,49 @@
+{
+    "env": {
+        "browser": true,
+        "es6": false,
+        "node": true
+    },
+    "rules": {
+        "array-bracket-spacing": ["error", "never"],
+        "block-spacing": ["error"],
+        "comma-dangle": ["error", "never"],
+        "comma-spacing": ["error", { "before": false, "after": true }],
+        "indent": ["error", 2], // modify this depending on the project
+        "key-spacing": ["error", { "beforeColon": false }],
+        "keyword-spacing": ["error", { "before": true, "after": true }],
+        "linebreak-style": ["error", "unix"],
+        "lines-around-comment": ["error", { "beforeLineComment": true, "beforeBlockComment": true }],
+        "no-cond-assign": ["error", "always"],
+        "no-console": "off",
+        "no-mixed-spaces-and-tabs": ["error"],
+        "no-multi-spaces": ["error"],
+        "no-trailing-spaces": ["error"],
+        "no-unused-vars": ["error", { "vars": "all" }],
+        "no-whitespace-before-property": ["error"],
+        "object-curly-spacing": ["error", "never"],
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+        "semi-spacing": ["error"],
+        "space-before-blocks": ["error"],
+        "space-in-parens": ["error", "never"],
+        "spaced-comment": ["error", "always", { "block": { "balanced": true } }],
+        "wrap-iife": ["error", "inside"],
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error"
+    },
+    "parserOptions": {
+        "ecmaVersion": 7,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+        }
+    },
+    "plugins": [
+        "jsx-a11y",
+        "react"
+    ],
+    "extends": [
+        "plugin:jsx-a11y/recommended"
+    ]
+}

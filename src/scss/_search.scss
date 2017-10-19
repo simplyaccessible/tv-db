@@ -1,0 +1,101 @@
+.search {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0 2rem;
+  text-align: center;
+
+  @media (min-width: 35rem) {
+    align-items: stretch;
+    flex-direction: row;
+  }
+
+  @media (min-width: 45rem) {
+    padding: 2rem 4rem 3rem;
+  }
+}
+
+.search__label {
+  position: relative;
+  width: 100%;
+}
+
+.search__label-text {
+  display: inline-block;
+  left: 0;
+  opacity: 0;
+  padding: .5rem;
+  position: absolute;
+  top: 0;
+  transform: translateY(-75%);
+  transition: all .2s ease-in-out;
+
+  &--floating {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
+}
+
+.search__error-text {
+  color: $red;
+  display: none;
+  padding-top: .5rem;
+
+  &--active {
+    display: block;
+  }
+}
+
+.search__input,
+.search__btn {
+  font-size: 1.25rem;
+  height: 3rem;
+  margin: 0;
+  padding: 0 1rem;
+
+  @media (min-width: 35rem) {
+    font-size: 1.75rem;
+  }
+}
+
+.search__input {
+  -webkit-appearance: textfield; // Reqired for safari…?
+  border: solid $light-gray 1px;
+  border-radius: 5px;
+  width: 100%;
+
+  @media (min-width: 35rem) {
+    border-radius: 5px 0 0 5px;
+  }
+
+  &::placeholder {
+    color: $gray;
+  }
+}
+
+.search__btn {
+  background-color: $red;
+  border: 0;
+  border-radius: 5px;
+  color: $white;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-top: 1rem;
+  position: relative;
+  transition: background-color .2s ease-out;
+  width: 12rem;
+
+  @media (min-width: 35rem) {
+    border-radius: 0 5px 5px 0;
+    margin-top: 0;
+    padding: 0 1rem;
+    width: auto;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: $dark-red;
+  }
+}
