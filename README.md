@@ -8,7 +8,7 @@
 
 This repo is a demo component from the article, [Creating Accessible React Apps](https://simplyaccessible.com/article/creaing-accessible-react-apps/). Have a read to find out how this app works and what makes it accessible, then come back and check out the source code. 🙂
 
-Try out the [live demo](https://simplyaccessible.github.io/tv-db) for yourself!
+Try out the [live demo](https://simplyaccessible.github.io/tv-db/) for yourself!
 
 ---
 

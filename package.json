@@ -2,7 +2,7 @@
   "name": "tv-db",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://simplyaccessible.com/tv-db",
+  "homepage": "https://simplyaccessible.github.io/tv-db",
   "dependencies": {
     "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.1.1",
@@ -21,12 +21,15 @@
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "autoprefixer": "postcss build/static/css/*.css --use autoprefixer -o build/static/css/*.css",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.4",
     "eslint": "^4.6.1",
     "eslint-plugin-jsx-a11y": "^6.0.2",
+    "gh-pages": "^1.0.0",
     "postcss-cli": "^4.1.1",
     "react-html-parser": "^2.0.0"
   }

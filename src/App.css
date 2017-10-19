@@ -50,8 +50,7 @@ p {
       padding: 3rem; } }
 
 .main {
-  margin-top: 2rem;
-  min-height: calc(100vh - 19rem); }
+  margin-top: 2rem; }
 
 .grid {
   display: flex;
@@ -266,7 +265,7 @@ p {
 .loader {
   align-items: center;
   display: flex;
-  height: calc(100vh - 19rem);
+  height: calc(50vh);
   justify-content: center; }
 
 .loader__image {
